@@ -1,6 +1,22 @@
 require_relative 'lib/board'
 require_relative 'lib/game'
 require_relative 'lib/player'
+require_relative 'lib/display'
 
-player1 = Player.new('Player 1', '✘')
-player1 = Player.new('Player 2', '𝓞')
+def play_game
+  game = Game.new
+  game.play
+  repeat_game
+end
+
+def repeat_game
+  puts 'Would you like to play a new game? [y/n]'
+  user_input = gets.chomp.downcase
+  if user_input == 'y'
+    play_game
+  else
+    puts '\n Thanks for playing!'
+  end
+end
+
+play_game
