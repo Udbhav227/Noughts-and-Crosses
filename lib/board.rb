@@ -1,4 +1,4 @@
-# tic-tac-toe board
+# Tic-Tac-Toe board setup
 class Board
   attr_reader :cells
 
@@ -14,11 +14,11 @@ class Board
 
   # rubocop:disable Metrics/AbcSize
   def display
-    puts " #{cells[0]} | #{cells[1]} | #{cells[2]}"
+    puts "\n #{cells[0]} | #{cells[1]} | #{cells[2]}"
     puts '---+---+---'
     puts " #{cells[3]} | #{cells[4]} | #{cells[5]}"
     puts '---+---+---'
-    puts " #{cells[6]} | #{cells[7]} | #{cells[8]}"
+    puts " #{cells[6]} | #{cells[7]} | #{cells[8]}\n\n"
   end
   # rubocop:enable Metrics/AbcSize
 
