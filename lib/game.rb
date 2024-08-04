@@ -1,3 +1,5 @@
+require_relative 'display'
+
 # Game setup
 class Game
   include Display
@@ -19,10 +21,19 @@ class Game
 
   private
 
+  def player_response
+    input = gets.chomp
+    if input.match?(/^[0-9]$/)
+      input.to_i
+    else
+      puts display_input_warning
+    end
+  end
+
   def start_game
     loop do
       print display_player_turn(@current_player.name, @current_player.symbol)
-      input = gets.chomp.to_i
+      input = player_response
       if board.valid_move?(input)
         make_move(input, @current_player.symbol)
         break if game_over?
