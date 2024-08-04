@@ -15,7 +15,7 @@ def repeat_game
   if user_input == 'y'
     play_game
   else
-    puts '\n Thanks for playing!'
+    puts 'Thanks for playing!'
   end
 end
 
