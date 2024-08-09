@@ -2,7 +2,7 @@
 
 This is a simple command-line Tic Tac Toe game implemented in Ruby. The game allows two players to take turns marking the spaces in a 3×3 grid, with the goal of placing three of their marks in a horizontal, vertical, or diagonal row.
 
-[![Run on Repl.it](https://repl.it/badge/github/udbhav227/Naughts-and-Crosses)](https://replit.com/@udbhav227/Noughts-and-Crosses?v=1)
+[![Run on Repl.it](https://repl.it/badge/github/udbhav227/Naughts-and-Crosses)](https://replit.com/github/udbhav227/Noughts-and-Crosses)
 
 ## Features
 
